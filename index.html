@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Teacher's Day | Dipak Nath</title>
+
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: white;
+
+    background:
+        #020c0b;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   CHEMISTRY AESTHETIC BACKGROUND
+===================================================== */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(0, 255, 190, 0.30),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(0, 200, 255, 0.25),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(70, 255, 150, 0.20),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #020807,
+            #06211d,
+            #03151d,
+            #020807
+        );
+
+    z-index: -3;
+
+}
+
+
+/* =====================================================
+   CHEMISTRY PARTICLES
+===================================================== */
+
+body::after {
+
+    content:
+        "⚗︎   H₂O   ⚛   Na   Cl   CO₂   🧪   H₂   O₂   🧬   ⚛   Fe   🧪";
+
+    position: fixed;
+
+    inset: 0;
+
+    color:
+        rgba(150,255,230,0.09);
+
+    font-size: 35px;
+
+    line-height: 4;
+
+    letter-spacing: 25px;
+
+    word-spacing: 30px;
+
+    transform:
+        rotate(-8deg)
+        scale(1.4);
+
+    animation:
+        chemistryMove 25s linear infinite;
+
+    z-index: -2;
+
+    pointer-events: none;
+
+}
+
+
+@keyframes chemistryMove {
+
+    0% {
+        transform:
+            rotate(-8deg)
+            translateY(0)
+            scale(1.4);
+    }
+
+    50% {
+        transform:
+            rotate(-8deg)
+            translateY(-35px)
+            scale(1.45);
+    }
+
+    100% {
+        transform:
+            rotate(-8deg)
+            translateY(0)
+            scale(1.4);
+    }
+
+}
+
+
+/* =====================================================
+   PAGES
+===================================================== */
+
+.page {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    padding: 25px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(60px)
+        scale(0.96);
+
+    transition:
+        opacity 0.65s ease,
+        transform 0.65s ease,
+        visibility 0.65s ease;
+
+}
+
+
+.page.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
+
+
+/* =====================================================
+   GLASS CONTAINER
+===================================================== */
+
+.content {
+
+    width:
+        min(1050px, 94vw);
+
+    max-height:
+        92vh;
+
+    overflow-y:
+        auto;
+
+    padding:
+        45px 35px;
+
+    border-radius:
+        30px;
+
+    background:
+        rgba(5, 35, 32, 0.68);
+
+    border:
+        1px solid
+        rgba(120,255,220,0.25);
+
+    backdrop-filter:
+        blur(20px);
+
+    -webkit-backdrop-filter:
+        blur(20px);
+
+    box-shadow:
+
+        0 30px 90px
+        rgba(0,0,0,0.65),
+
+        inset 0 1px
+        rgba(255,255,255,0.15),
+
+        0 0 45px
+        rgba(0,255,190,0.08);
+
+}
+
+
+/* =====================================================
+   SMALL TITLE
+===================================================== */
+
+.small-title {
+
+    font-size:
+        0.9rem;
+
+    letter-spacing:
+        6px;
+
+    text-transform:
+        uppercase;
+
+    color:
+        #9affdf;
+
+    margin-bottom:
+        20px;
+
+    font-weight:
+        bold;
+
+}
+
+
+/* =====================================================
+   MAIN HEADINGS
+===================================================== */
+
+h1 {
+
+    font-size:
+        clamp(
+            3rem,
+            9vw,
+            7rem
+        );
+
+    line-height:
+        0.92;
+
+    font-weight:
+        1000;
+
+    text-transform:
+        uppercase;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #76ffe0,
+            #b8ffff,
+            #ffffff,
+            #52e6ff
+        );
+
+    background-size:
+        300% auto;
+
+    color:
+        transparent;
+
+    -webkit-background-clip:
+        text;
+
+    background-clip:
+        text;
+
+    animation:
+        chemistryShine 5s linear infinite;
+
+}
+
+
+@keyframes chemistryShine {
+
+    0% {
+        background-position:
+            0% center;
+    }
+
+    100% {
+        background-position:
+            300% center;
+    }
+
+}
+
+
+h2 {
+
+    font-size:
+        clamp(
+            2.2rem,
+            6vw,
+            5rem
+        );
+
+    font-weight:
+        1000;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+p {
+
+    font-size:
+        1.1rem;
+
+    line-height:
+        1.8;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.88
+        );
+
+}
+
+
+/* =====================================================
+   TEACHER NAME
+===================================================== */
+
+.teacher-name {
+
+    font-size:
+        clamp(
+            2.5rem,
+            7vw,
+            6rem
+        );
+
+    font-weight:
+        1000;
+
+    letter-spacing:
+        3px;
+
+    margin:
+        25px 0;
+
+    color:
+        #ffffff;
+
+    text-shadow:
+
+        0 0 10px
+        rgba(255,255,255,0.4),
+
+        0 0 30px
+        rgba(0,255,190,0.6),
+
+        0 0 70px
+        rgba(0,220,255,0.35);
+
+}
+
+
+/* =====================================================
+   INFO
+===================================================== */
+
+.info {
+
+    font-size:
+        1.1rem;
+
+    line-height:
+        2;
+
+    color:
+        #d9fff6;
+
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navigation {
+
+    margin-top:
+        35px;
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    flex-wrap:
+        wrap;
+
+}
+
+
+.nav-btn {
+
+    min-width:
+        210px;
+
+    min-height:
+        60px;
+
+    padding:
+        16px 30px;
+
+    border:
+        2px solid
+        rgba(
+            160,
+            255,
+            230,
+            0.75
+        );
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(
+            0,
+            255,
+            190,
+            0.10
+        );
+
+    color:
+        white;
+
+    font-size:
+        1rem;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        2px;
+
+    cursor:
+        pointer;
+
+    transition:
+        all 0.3s ease;
+
+    box-shadow:
+
+        0 0 25px
+        rgba(
+            0,
+            255,
+            190,
+            0.20
+        );
+
+    position:
+        relative;
+
+    z-index:
+        100;
+
+}
+
+
+.nav-btn:hover {
+
+    transform:
+        translateY(-5px)
+        scale(1.04);
+
+    background:
+        rgba(
+            0,
+            255,
+            190,
+            0.22
+        );
+
+    box-shadow:
+
+        0 0 40px
+        rgba(
+            0,
+            255,
+            190,
+            0.55
+        );
+
+}
+
+
+.nav-btn:active {
+
+    transform:
+        scale(0.95);
+
+}
+
+
+/* =====================================================
+   CHEMISTRY QUALITY CARDS
+===================================================== */
+
+.qualities {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(
+                180px,
+                1fr
+            )
+        );
+
+    gap:
+        16px;
+
+    margin-top:
+        30px;
+
+}
+
+
+.quality {
+
+    padding:
+        25px 15px;
+
+    border-radius:
+        20px;
+
+    background:
+        rgba(
+            0,
+            255,
+            190,
+            0.06
+        );
+
+    border:
+        1px solid
+        rgba(
+            150,
+            255,
+            230,
+            0.16
+        );
+
+    transition:
+        0.3s ease;
+
+}
+
+
+.quality:hover {
+
+    transform:
+        translateY(-8px);
+
+    background:
+        rgba(
+            0,
+            255,
+            190,
+            0.12
+        );
+
+}
+
+
+.emoji {
+
+    display:
+        block;
+
+    font-size:
+        2.5rem;
+
+    margin-bottom:
+        12px;
+
+}
+
+
+.quality h3 {
+
+    margin-bottom:
+        10px;
+
+    font-size:
+        1.3rem;
+
+}
+
+
+/* =====================================================
+   MOTIVATIONAL CARDS
+===================================================== */
+
+.motivations {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(
+                280px,
+                1fr
+            )
+        );
+
+    gap:
+        18px;
+
+    margin-top:
+        25px;
+
+}
+
+
+.motivation {
+
+    text-align:
+        left;
+
+    padding:
+        24px;
+
+    border-radius:
+        20px;
+
+    border-left:
+        4px solid
+        #73ffe0;
+
+    background:
+        rgba(
+            0,
+            255,
+            190,
+            0.055
+        );
+
+    transition:
+        0.3s ease;
+
+}
+
+
+.motivation:hover {
+
+    transform:
+        translateY(-5px);
+
+    background:
+        rgba(
+            0,
+            255,
+            190,
+            0.12
+        );
+
+}
+
+
+.motivation-title {
+
+    font-size:
+        1.25rem;
+
+    font-weight:
+        900;
+
+    margin-bottom:
+        14px;
+
+    color:
+        #c8fff2;
+
+}
+
+
+.motivation p {
+
+    font-size:
+        1rem;
+
+    line-height:
+        1.7;
+
+}
+
+
+.thanks {
+
+    font-weight:
+        900;
+
+    color:
+        #a8ffe8;
+
+}
+
+
+/* =====================================================
+   STUDENT PAGE
+===================================================== */
+
+.student-name {
+
+    font-size:
+        clamp(
+            2.2rem,
+            6vw,
+            5rem
+        );
+
+    font-weight:
+        1000;
+
+    margin:
+        20px 0;
+
+    text-transform:
+        uppercase;
+
+    text-shadow:
+
+        0 0 30px
+        rgba(
+            0,
+            255,
+            190,
+            0.45
+        );
+
+}
+
+
+.student-info {
+
+    font-size:
+        1.25rem;
+
+    line-height:
+        2;
+
+}
+
+
+.final-message {
+
+    margin-top:
+        25px;
+
+    font-size:
+        1.2rem;
+
+    line-height:
+        1.8;
+
+}
+
+
+/* =====================================================
+   PAGE COUNTER
+===================================================== */
+
+.page-counter {
+
+    position:
+        fixed;
+
+    top:
+        18px;
+
+    right:
+        18px;
+
+    z-index:
+        1000;
+
+    padding:
+        10px 18px;
+
+    border-radius:
+        50px;
+
+    background:
+        rgba(
+            0,
+            20,
+            18,
+            0.75
+        );
+
+    border:
+        1px solid
+        rgba(
+            150,
+            255,
+            230,
+            0.25
+        );
+
+    color:
+        #b8ffed;
+
+    font-weight:
+        900;
+
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.content::-webkit-scrollbar {
+
+    width:
+        6px;
+
+}
+
+
+.content::-webkit-scrollbar-thumb {
+
+    background:
+        rgba(
+            130,
+            255,
+            225,
+            0.35
+        );
+
+    border-radius:
+        20px;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .page {
+
+        padding:
+            12px;
+
+    }
+
+
+    .content {
+
+        padding:
+            30px 18px;
+
+        max-height:
+            90vh;
+
+    }
+
+
+    p {
+
+        font-size:
+            1rem;
+
+    }
+
+
+    .nav-btn {
+
+        width:
+            100%;
+
+        min-height:
+            58px;
+
+    }
+
+
+    .qualities,
+    .motivations {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .teacher-name {
+
+        letter-spacing:
+            1px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     PAGE COUNTER
+===================================================== -->
+
+<div class="page-counter">
+
+    PAGE
+    <span id="pageNumber">1</span>
+    / 5
+
+</div>
+
+
+
+<!-- =====================================================
+     PAGE 1
+===================================================== -->
+
+<section
+    class="page active"
+    id="page1"
+>
+
+    <div class="content">
+
+        <div class="small-title">
+
+            A Tribute Written With Gratitude 🧪
+
+        </div>
+
+
+        <h1>
+
+            Chemistry<br>
+            Of Inspiration
+
+        </h1>
+
+
+        <p style="margin-top:28px;">
+
+            Behind every formula is an idea. 🧠
+
+            <br>
+
+            Behind every experiment is curiosity. 🔬
+
+            <br>
+
+            And behind every confident student,
+            there can be a teacher who made learning possible. ❤️
+
+        </p>
+
+
+        <div class="navigation">
+
+            <button
+                class="nav-btn"
+                onclick="nextPage()"
+            >
+
+                BEGIN THE JOURNEY ⚗️
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 2
+===================================================== -->
+
+<section
+    class="page"
+    id="page2"
+>
+
+    <div class="content">
+
+        <div class="small-title">
+
+            The Chemist Behind The Classroom 🧪
+
+        </div>
+
+
+        <h2>
+
+            A Special Welcome, Sir! 👨‍🏫⚗️
+
+        </h2>
+
+
+        <p>
+
+            Chemistry is not only about elements,
+            reactions and equations.
+
+            It is about understanding how small
+            changes can create something completely new.
+
+            A great teacher makes that world easier
+            to explore and understand. 🔬✨
+
+        </p>
+
+
+        <div class="teacher-name">
+
+            DIPAK NATH
+
+        </div>
+
+
+        <div class="info">
+
+            📍 From
+            <strong>Sribhumi, Assam</strong>
+
+            <br>
+
+            🏫 Chemistry Lecturer at
+            <strong>AHNSSS, Badarpur, Assam</strong>
+
+            <br>
+
+            🧪 Guiding the minds of
+            <strong>Class XII Science</strong>
+
+        </div>
+
+
+        <div class="navigation">
+
+            <button
+                class="nav-btn"
+                onclick="nextPage()"
+            >
+
+                DISCOVER MORE → 🧪
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 3
+===================================================== -->
+
+<section
+    class="page"
+    id="page3"
+>
+
+    <div class="content">
+
+        <div class="small-title">
+
+            The Qualities We Appreciate 🌟
+
+        </div>
+
+
+        <h2>
+
+            A Teacher Like No Other ⚗️
+
+        </h2>
+
+
+        <p>
+
+            The best lessons are not always written
+            on a blackboard.
+
+            Sometimes they are found in the way
+            a teacher explains, motivates and guides
+            students through difficult concepts.
+
+        </p>
+
+
+        <div class="qualities">
+
+
+            <div class="quality">
+
+                <span class="emoji">
+                    🧪
+                </span>
+
+                <h3>
+                    Clear Explainer
+                </h3>
+
+                <p>
+
+                    Makes complex chemistry concepts
+                    easier to understand step by step.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="quality">
+
+                <span class="emoji">
+                    🧠
+                </span>
+
+                <h3>
+                    Knowledgeable
+                </h3>
+
+                <p>
+
+                    Turns formulas, reactions and theories
+                    into meaningful learning.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="quality">
+
+                <span class="emoji">
+                    💪
+                </span>
+
+                <h3>
+                    Confident
+                </h3>
+
+                <p>
+
+                    His confidence creates an environment
+                    where students can learn without hesitation.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="quality">
+
+                <span class="emoji">
+                    🔥
+                </span>
+
+                <h3>
+                    Motivating
+                </h3>
+
+                <p>
+
+                    Encourages students to keep working
+                    even when a topic becomes difficult.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="quality">
+
+                <span class="emoji">
+                    🔬
+                </span>
+
+                <h3>
+                    Curious
+                </h3>
+
+                <p>
+
+                    Inspires students to look beyond memorising
+                    and understand the science behind it.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="quality">
+
+                <span class="emoji">
+                    🤝
+                </span>
+
+                <h3>
+                    Supportive
+                </h3>
+
+                <p>
+
+                    Helps students feel comfortable asking
+                    questions and improving their understanding.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="navigation">
+
+            <button
+                class="nav-btn"
+                onclick="nextPage()"
+            >
+
+                NEXT REACTION → ⚛️
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 4
+===================================================== -->
+
+<section
+    class="page"
+    id="page4"
+>
+
+    <div class="content">
+
+        <div class="small-title">
+
+            Five Lessons From Our Chemistry Journey ❤️
+
+        </div>
+
+
+        <h2>
+
+            More Than Just Chemistry 🧪✨
+
+        </h2>
+
+
+        <div class="motivations">
+
+
+            <!-- 01 -->
+
+            <div class="motivation">
+
+                <div class="motivation-title">
+
+                    🧪 01. Every Reaction Has A Purpose ⚗️
+
+                </div>
+
+
+                <p>
+
+                    Sir, chemistry taught us that every
+                    reaction has a reason behind it.
+
+                    <br><br>
+
+                    🧠 In the same way, every challenge
+                    in life can teach us something valuable.
+
+                    <br><br>
+
+                    🔬 Your lessons remind us to understand
+                    the process instead of only looking at
+                    the final result.
+
+                    <br><br>
+
+                    ❤️
+                    <span class="thanks">
+
+                        Thank you for teaching us
+                        to understand, not just memorise.
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- 02 -->
+
+            <div class="motivation">
+
+                <div class="motivation-title">
+
+                    ⚛️ 02. Small Elements Can Make Big Changes 🌟
+
+                </div>
+
+
+                <p>
+
+                    A tiny change in a chemical reaction
+                    can sometimes create a completely
+                    different result.
+
+                    <br><br>
+
+                    🌱 Similarly, small efforts in our
+                    daily lives can create a huge difference
+                    in our future.
+
+                    <br><br>
+
+                    🚀 Your teaching reminds us that
+                    no effort is ever too small.
+
+                    <br><br>
+
+                    🙏
+                    <span class="thanks">
+
+                        Thank you for showing us
+                        the power of small steps.
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- 03 -->
+
+            <div class="motivation">
+
+                <div class="motivation-title">
+
+                    🔥 03. Heat, Pressure &amp; Challenges Build Us 💪
+
+                </div>
+
+
+                <p>
+
+                    Chemistry shows us that conditions
+                    such as heat and pressure can change
+                    the behaviour of substances.
+
+                    <br><br>
+
+                    💫 Life is similar.
+
+                    Difficult situations can test us,
+                    strengthen us and transform us.
+
+                    <br><br>
+
+                    🏆 Your guidance encourages us
+                    to stay strong under pressure.
+
+                    <br><br>
+
+                    🌟
+                    <span class="thanks">
+
+                        Thank you for teaching us
+                        to face pressure with courage.
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- 04 -->
+
+            <div class="motivation">
+
+                <div class="motivation-title">
+
+                    🧠 04. Understanding Is Better Than Memorising 📚
+
+                </div>
+
+
+                <p>
+
+                    Chemistry can look complicated when
+                    we only try to memorise formulas.
+
+                    <br><br>
+
+                    💡 But once we understand the logic,
+                    everything starts connecting.
+
+                    <br><br>
+
+                    🔬 Your explanations encourage us
+                    to search for the "why" behind the answer.
+
+                    <br><br>
+
+                    ❤️
+                    <span class="thanks">
+
+                        Thank you for helping us
+                        understand the science behind the formula.
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- 05 -->
+
+            <div class="motivation">
+
+                <div class="motivation-title">
+
+                    👨‍🏫 05. The Best Lessons Stay With Us 🌅
+
+                </div>
+
+
+                <p>
+
+                    One day, our Class XII journey
+                    will become a memory.
+
+                    <br><br>
+
+                    🎓 We may forget some equations,
+                    formulas or reactions with time.
+
+                    <br><br>
+
+                    🌟 But the confidence, knowledge
+                    and discipline given by a teacher
+                    can remain with us for years.
+
+                    <br><br>
+
+                    🙏
+                    <span class="thanks">
+
+                        Thank you, Sir, for being
+                        a meaningful part of our journey. ❤️🧪
+
+                    </span>
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="navigation">
+
+            <button
+                class="nav-btn"
+                onclick="nextPage()"
+            >
+
+                FINAL PAGE → 🚀
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 5
+===================================================== -->
+
+<section
+    class="page"
+    id="page5"
+>
+
+    <div class="content">
+
+        <div class="small-title">
+
+            A Tribute From Your Student 💚
+
+        </div>
+
+
+        <h2>
+
+            From The Classroom ❤️
+
+        </h2>
+
+
+        <div class="student-name">
+
+            SUHAIL TANWEER TAPADAR
+
+        </div>
+
+
+        <div class="student-info">
+
+            🎓
+            <strong>Class XII</strong>
+
+            <br>
+
+            🔬
+            <strong>Science Stream</strong>
+
+            <br>
+
+            🏫
+            <strong>AHNSSS, Badarpur, Assam</strong>
+
+        </div>
+
+
+        <p class="final-message">
+
+            Dear Sir, 👨‍🏫🧪
+
+            <br><br>
+
+            Chemistry may teach us about elements,
+            compounds and reactions,
+
+            but a good teacher teaches us something
+            much bigger — how to think, understand,
+            question and keep moving forward.
+
+            <br><br>
+
+            🔬⚗️🧪⚛️💚
+
+            <br><br>
+
+            Your lessons are not limited to the classroom.
+            They become a part of our journey.
+
+            <br><br>
+
+            <strong>
+
+                HAPPY TEACHER'S DAY, DIPAK SIR! 🎉
+                👨‍🏫🧪❤️
+
+            </strong>
+
+        </p>
+
+
+        <div class="navigation">
+
+            <button
+                class="nav-btn"
+                onclick="goToPage(1)"
+            >
+
+                ← BACK TO START 🔄
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   PAGE SETTINGS
+===================================================== */
+
+let currentPage = 1;
+
+const totalPages = 5;
+
+
+/* =====================================================
+   SHOW PAGE
+===================================================== */
+
+function showPage(pageNumber) {
+
+
+    /* Safety */
+
+    if (pageNumber < 1) {
+
+        pageNumber = 1;
+
+    }
+
+
+    if (pageNumber > totalPages) {
+
+        pageNumber = totalPages;
+
+    }
+
+
+    /* Hide all pages */
+
+    const pages =
+        document.querySelectorAll(".page");
+
+
+    pages.forEach(function(page) {
+
+        page.classList.remove("active");
+
+    });
+
+
+    /* Select page */
+
+    const selectedPage =
+        document.getElementById(
+            "page" + pageNumber
+        );
+
+
+    /* Display page */
+
+    if (selectedPage) {
+
+        selectedPage.classList.add("active");
+
+        currentPage = pageNumber;
+
+
+        /* Update counter */
+
+        document.getElementById(
+            "pageNumber"
+        ).textContent =
+            currentPage;
+
+
+        /* Reset scrolling */
+
+        const content =
+            selectedPage.querySelector(
+                ".content"
+            );
+
+
+        if (content) {
+
+            content.scrollTop = 0;
+
+        }
+
+    }
+
+}
+
+
+/* =====================================================
+   NEXT
+===================================================== */
+
+function nextPage() {
+
+    if (
+        currentPage <
+        totalPages
+    ) {
+
+        showPage(
+            currentPage + 1
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   PREVIOUS
+===================================================== */
+
+function previousPage() {
+
+    if (
+        currentPage > 1
+    ) {
+
+        showPage(
+            currentPage - 1
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   DIRECT PAGE
+===================================================== */
+
+function goToPage(pageNumber) {
+
+    showPage(pageNumber);
+
+}
+
+
+/* =====================================================
+   KEYBOARD NAVIGATION
+===================================================== */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+
+        /* RIGHT ARROW */
+
+        if (
+            event.key ===
+            "ArrowRight"
+        ) {
+
+            nextPage();
+
+        }
+
+
+        /* ENTER */
+
+        if (
+            event.key ===
+            "Enter"
+        ) {
+
+            nextPage();
+
+        }
+
+
+        /* LEFT ARROW */
+
+        if (
+            event.key ===
+            "ArrowLeft"
+        ) {
+
+            previousPage();
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   START
+===================================================== */
+
+showPage(1);
+
+</script>
+
+
+</body>
+
+</html>
